@@ -9,7 +9,9 @@ exports.config = {
   },
   
   params:{
-	  gameName: "Mayfair Roulette" 
+	  gameName: "Mayfair Roulette" ,
+	  URL: "https://vegas.williamhill.com/",
+	  implicityTimeout: 30000,
   },
 
   // Framework to use. Jasmine is recommended.
@@ -17,7 +19,7 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['vegas_spec.js'],
+  specs: ['pages/vegas_spec.js'],
   getPageTimeout: 120000,
   allScriptsTimeout: 120000,
 
